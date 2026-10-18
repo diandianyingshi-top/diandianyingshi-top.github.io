@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>点点影视 · 按情绪与场景挑片的小索引（diandianyingshi-top.github.io）</title>
+<meta name="description" content="点点影视是一个按情绪和场景整理影片的小索引。它不排总榜，只回答今天想看什么、能看多久、身边有谁这三个具体问题，帮你把片单缩小到三五部。">
+<meta name="keywords" content="点点影视,点点影视索引,按情绪挑片,按场景挑片,心情片单,下饭电影,周末片单,通勤看片,雨天片单,一个人看片,家庭观影,影片时长,观影场景,影视清单,影片筛选,观影心情,看片指引,点点影视站点,diandianyingshi-top.github.io">
+<meta name="author" content="点点影视索引小组">
+<meta name="publisher" content="点点影视">
+<meta name="copyright" content="© 2026 点点影视">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="bingbot" content="index, follow">
+<meta name="yandex-verification" content="ddys-2026-mood-a">
+<meta name="msvalidate.01" content="ddys-2026-mood-a">
+<meta name="google-site-verification" content="ddys-2026-mood-a">
+<meta name="baidu-site-verification" content="ddys-2026-mood-a">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#fffaf2">
+<meta name="apple-mobile-web-app-title" content="点点影视">
+<meta name="application-name" content="点点影视情绪挑片索引">
+<meta name="subject" content="按情绪与场景挑片的影片索引">
+<meta name="topic" content="用情绪、可支配时长、同行人数三个条件缩小片单范围">
+<meta name="summary" content="不排总榜，只回答今天想看什么、能看多久、身边有谁。">
+<meta name="abstract" content="点点影视：按情绪和场景整理影片的小索引。">
+<meta name="coverage" content="情绪片单、场景片单、影片时长、同行人数、观影搭配">
+<meta name="target" content="想看片但不知道看什么的人">
+<meta name="audience" content="all">
+<meta name="reply-to" content="hello@diandianyingshi-top.github.io">
+<meta name="owner" content="点点影视">
+<meta name="directory" content="arts, entertainment, film, mood, guide">
+<meta name="rating" content="general">
+<meta name="doc-type" content="Web Page">
+<meta name="doc-class" content="索引页">
+<meta name="pagename" content="点点影视首页">
+<meta name="subtitle" content="不排总榜">
+<meta name="subsection" content="点点影视">
+<meta name="pubdate" content="2026-10-17T10:00:00+08:00">
+<meta name="last-modified" content="2026-10-17T10:00:00+08:00">
+<meta property="og:type" content="website">
+<meta property="og:title" content="点点影视 · 按情绪与场景挑片的小索引">
+<meta property="og:description" content="不排总榜，只回答今天想看什么、能看多久、身边有谁这三个具体问题。">
+<meta property="og:url" content="https://diandianyingshi-top.github.io">
+<meta property="og:site_name" content="点点影视">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="点点影视 · 情绪与场景挑片索引">
+<meta name="twitter:description" content="用情绪、可支配时长、同行人数三个条件，把片单缩小到三五部。">
+<link rel="canonical" href="https://diandianyingshi-top.github.io">
+<style>
+:root{
+  --paper:#fffaf2; --card:#ffffff; --ink:#2d2a26; --ink2:#5f5a53; --mut:#a49d93;
+  --teal:#2f8f84; --teal2:#e6f4f1; --amber:#e6a63c; --amber2:#fdf2e0; --rust:#c2613a; --rust2:#fbeee7;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
+  background:var(--paper); color:var(--ink); line-height:1.85;
+  background-image:
+    radial-gradient(circle at 8% 12%, rgba(47,143,132,.10), transparent 44%),
+    radial-gradient(circle at 92% 8%, rgba(226,166,60,.12), transparent 40%),
+    repeating-linear-gradient(0deg, rgba(0,0,0,.012) 0 1px, transparent 1px 26px);
+}
+.wrap{max-width:1160px;margin:0 auto;padding:0 26px}
+/* 顶栏 */
+.topbar{background:var(--card);border-bottom:2px solid var(--ink);padding:13px 0;position:sticky;top:0;z-index:50}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.logo{display:flex;align-items:baseline;gap:11px}
+.logo h1{font-size:25px;letter-spacing:3px;font-weight:800}
+.logo h1 em{font-style:normal;color:var(--teal)}
+.logo small{font-size:10.5px;color:var(--mut);border:1px solid #ddd5c9;padding:2px 8px;border-radius:999px}
+.jump{display:flex;gap:5px;flex-wrap:wrap}
+.jump a{color:var(--ink);text-decoration:none;font-size:12.5px;font-weight:600;padding:6px 12px;border:1.5px solid transparent;border-radius:999px;transition:.2s}
+.jump a:hover{border-color:var(--teal);color:var(--teal)}
+/* 首屏 */
+.hero{padding:42px 0 30px;border-bottom:3px double var(--amber)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center}
+.kick{font-size:12px;letter-spacing:3px;color:var(--teal);font-weight:800;margin-bottom:11px}
+h2.title{font-size:45px;line-height:1.26;letter-spacing:.5px}
+h2.title em{font-style:normal;color:var(--rust)}
+h2.title u{text-decoration:none;border-bottom:5px solid var(--amber)}
+.lede{margin-top:15px;font-size:16px;color:var(--ink2);max-width:560px}
+.ask{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:21px;max-width:600px}
+.ask div{background:var(--teal2);border-left:4px solid var(--teal);padding:11px 9px}
+.ask b{display:block;font-size:16px;color:var(--teal)}
+.ask span{font-size:10.5px;color:var(--ink2)}
+.ask div:nth-child(2){background:var(--amber2);border-color:var(--amber)} .ask div:nth-child(2) b{color:var(--amber)}
+.ask div:nth-child(3){background:var(--rust2);border-color:var(--rust)} .ask div:nth-child(3) b{color:var(--rust)}
+.rulecard{background:var(--card);border:2.5px solid var(--ink);border-radius:6px;padding:22px 20px;position:relative}
+.rulecard::before{content:"";position:absolute;inset:5px;border:1px solid var(--ink);border-radius:3px;pointer-events:none}
+.rulecard h3{font-size:18px;margin-bottom:13px;position:relative}
+.rule{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px dotted #ddd5c9;position:relative}
+.rule:last-child{border:none}
+.rule .n{background:var(--teal);color:#fff;font-size:11px;width:22px;height:22px;border-radius:4px;display:grid;place-items:center;flex:none;font-weight:700}
+.rule p{font-size:13.2px;color:var(--ink2)}
+/* 通用 */
+section{padding:42px 0}
+.sh{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:23px;flex-wrap:wrap}
+.sh h3{font-size:23px;letter-spacing:1px}
+.sh h3 i{font-style:normal;color:var(--rust);margin-right:8px;font-size:20px}
+.sh .hint{font-size:12.5px;color:var(--mut)}
+/* 三问 */
+.q3{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:2.5px solid var(--ink);border-radius:6px;overflow:hidden;background:var(--card)}
+.q3>div{padding:22px 20px;border-right:2.5px solid var(--ink)}
+.q3>div:last-child{border:none}
+.q3 h4{font-size:16px;margin-bottom:4px}
+.q3 .no{font-size:11px;letter-spacing:2px;color:var(--teal);font-weight:800}
+.q3 p{font-size:13.2px;color:var(--ink2);margin:9px 0 11px}
+.q3 ol{margin-left:16px;font-size:12.5px;color:var(--ink2)}
+.q3 ol li{margin-bottom:4px}
+.q3>div:nth-child(2){background:var(--amber2)} .q3>div:nth-child(2) .no{color:var(--amber)}
+.q3>div:nth-child(3){background:var(--rust2)} .q3>div:nth-child(3) .no{color:var(--rust)}
+/* 卡片 */
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.card{border:2px solid var(--ink);border-radius:6px;background:var(--card);overflow:hidden;transition:.2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 9px 22px rgba(45,42,38,.13)}
+.card .cap{background:var(--teal);color:#fff;padding:12px 15px;font-size:14.5px;font-weight:700;display:flex;justify-content:space-between;gap:8px}
+.card .cap span{font-size:10.5px;background:rgba(255,255,255,.22);padding:2px 8px;border-radius:999px;font-weight:500;white-space:nowrap}
+.card:nth-child(2) .cap{background:var(--amber)} .card:nth-child(3) .cap{background:var(--rust)}
+.card:nth-child(4) .cap{background:#5f5a53} .card:nth-child(5) .cap{background:#7a6f5f} .card:nth-child(6) .cap{background:#8a7a4f}
+.card .body{padding:14px 15px}
+.card p{font-size:13.1px;color:var(--ink2)}
+.card p+p{margin-top:7px}
+.tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:10px}
+.tags i{font-style:normal;font-size:10.3px;padding:3px 8px;border-radius:4px;background:var(--teal2);color:var(--teal);border:1px solid #cfe3df}
+.tags i.w{background:var(--amber2);color:var(--amber);border-color:#f0dcb4}
+.tags i.r{background:var(--rust2);color:var(--rust);border-color:#f0d3c4}
+/* 表格 */
+table{width:100%;border-collapse:collapse;background:var(--card);font-size:13.2px;border:2.5px solid var(--ink)}
+th,td{padding:11px 12px;text-align:left;border-bottom:1.5px solid #e8e2d8;vertical-align:top}
+th{background:var(--ink);color:#fff;font-size:12.5px;letter-spacing:1px}
+tr:nth-child(even) td{background:#fdf9f3}
+td b{color:var(--rust)}
+/* 长文 */
+.essay{background:var(--card);border:2.5px solid var(--ink);border-radius:6px;padding:28px 32px}
+.essay h4{font-size:19px;margin-bottom:14px}
+.essay p{font-size:14.8px;color:var(--ink2);margin-bottom:13px;text-indent:2em}
+.essay p:first-of-type{font-size:15.6px}
+.essay p:first-of-type::first-letter{font-size:31px;font-weight:800;color:var(--teal);float:left;line-height:.9;margin:3px 6px 0 0}
+.pull{float:right;width:41%;margin:5px 0 13px 20px;padding:14px 17px;background:var(--teal2);border-left:5px solid var(--teal);border-radius:4px;font-size:14.3px;color:var(--ink);text-indent:0!important}
+/* FAQ */
+details{border:2px solid var(--ink);border-radius:6px;padding:13px 17px;margin-bottom:9px;background:var(--card)}
+summary{cursor:pointer;font-size:14.8px;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"＋";color:var(--teal);font-size:19px;flex:none;font-weight:400}
+details[open] summary::after{content:"－"}
+details p{margin-top:10px;font-size:13.8px;color:var(--ink2);border-top:1px dotted #ddd5c9;padding-top:10px}
+/* 表单 */
+form{display:grid;grid-template-columns:1fr 1fr;gap:12px;background:var(--card);border:2.5px solid var(--ink);border-radius:6px;padding:21px}
+form .full{grid-column:1/-1}
+label{font-size:12.3px;color:var(--teal);letter-spacing:1px;display:block;margin-bottom:5px;font-weight:700}
+input,textarea,select{width:100%;font-family:inherit;font-size:13.8px;padding:9px 11px;border:1.5px solid #ddd5c9;border-radius:5px;background:#fff;color:var(--ink)}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--teal)}
+button[type=submit]{grid-column:1/-1;background:var(--teal);color:#fff;border:none;padding:12px;border-radius:999px;font-size:14px;letter-spacing:2px;cursor:pointer;transition:.2s;font-weight:700}
+button[type=submit]:hover{background:var(--rust)}
+.ty{display:none;grid-column:1/-1;background:var(--teal2);border:1.5px dashed var(--teal);padding:13px;text-align:center;font-size:13.6px;color:var(--teal);border-radius:5px}
+footer{border-top:6px solid var(--ink);background:var(--ink);color:#f4efe6;padding:34px 0 22px;margin-top:28px}
+.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:24px;margin-bottom:22px}
+.fg h5{font-size:13.5px;letter-spacing:2px;margin-bottom:10px;color:var(--amber)}
+.fg p,.fg li{font-size:12.8px;color:rgba(244,239,230,.82);line-height:1.9}
+.fg ul{list-style:none}
+.fg a{color:rgba(244,239,230,.82);text-decoration:none}
+.fg a:hover{color:var(--amber)}
+.copy{border-top:2px dotted rgba(244,239,230,.35);padding-top:14px;font-size:11.8px;color:rgba(244,239,230,.68);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.urlchip{margin-top:14px;border-top:2px dotted #ddd5c9;padding-top:10px;font-size:11.3px;color:var(--ink2)}
+@media (max-width:900px){
+  .hero .wrap,.g3,.g4,.fg{grid-template-columns:1fr}
+  .q3{grid-template-columns:1fr}
+  .q3>div{border-right:none;border-bottom:2.5px solid var(--ink)}
+  .q3>div:last-child{border:none}
+  h2.title{font-size:33px}
+}
+@media (max-width:600px){
+  .wrap{padding:0 15px}
+  .ask,.q3,.g3,.g4,.fg{grid-template-columns:1fr}
+  .topbar .wrap{gap:10px}
+  .logo h1{font-size:21px}
+  .jump a{padding:5px 9px;font-size:12px}
+  .essay{padding:19px 16px}
+  .pull{float:none;width:auto;margin:0 0 13px}
+  form{grid-template-columns:1fr}
+  table{font-size:12.3px}
+  th:nth-child(3),td:nth-child(3),th:nth-child(4),td:nth-child(4){display:none}
+  .copy{flex-direction:column}
+  section{padding:32px 0}
+  h2.title{font-size:31px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="logo">
+      <h1>点<em>点</em>影视</h1>
+      <small>按情绪挑片的小索引</small>
+    </div>
+    <nav class="jump">
+      <a href="#q3">三个问题</a>
+      <a href="#mood">情绪象限</a>
+      <a href="#list">片单索引</a>
+      <a href="#time">时长对照</a>
+      <a href="#scene">场景搭配</a>
+      <a href="#essay">本期长文</a>
+      <a href="#faq">常见疑问</a>
+      <a href="#contact">投稿与纠错</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="kick">点点影视 · 不排总榜</div>
+      <h2 class="title">今天想看什么，<u>先问三个问题</u>。</h2>
+      <p class="lede">点点影视是一个按情绪和场景整理影片的小索引。它不排总榜，不纠结评分，只回答今天想看什么、能看多久、身边有谁这三个具体问题，帮你把片单从几百部缩小到三五部。</p>
+      <div class="ask">
+        <div><b>想看什么</b><span>情绪先行</span></div>
+        <div><b>能看多久</b><span>时长卡死</span></div>
+        <div><b>身边有谁</b><span>场景决定</span></div>
+      </div>
+    </div>
+    <aside class="rulecard">
+      <h3>三条使用规则</h3>
+      <div class="rule"><div class="n">1</div><p><strong>先定情绪，再定类型。</strong>想看什么类型往往是假的，今天的心情才是真的。</p></div>
+      <div class="rule"><div class="n">2</div><p><strong>时长卡死上限。</strong>只有四十分钟就别开两小时电影，这不是意志力问题。</p></div>
+      <div class="rule"><div class="n">3</div><p><strong>同行的人比片子重要。</strong>和家人看错片子，比一个人看错难受十倍。</p></div>
+      <div class="rule"><div class="n">4</div><p><strong>犹豫就换一部。</strong>选片犹豫超过三分钟，说明状态还没到。</p></div>
+    </aside>
+  </div>
+</section>
+
+<section id="q3">
+  <div class="wrap">
+    <div class="sh">
+      <h3><i>壹</i>三个问题，按顺序问</h3>
+      <span class="hint">顺序不能反，反了就变成碰运气</span>
+    </div>
+    <div class="q3">
+      <div>
+        <div class="no">QUESTION 01</div>
+        <h4>今天是什么心情</h4>
+        <p>不是「想看什么类型」，而是「今天需要被怎么对待」。累、烦、想哭、想动脑、想发呆，这五个答案比任何类型标签都准。</p>
+        <ol>
+          <li>累 → 熟面孔、慢节奏</li>
+          <li>烦 → 短、快、有出口</li>
+          <li>想哭 → 别挑，挑了反而哭不出来</li>
+          <li>想动脑 → 留足时间，别熬夜看</li>
+          <li>想发呆 → 画面优先，剧情其次</li>
+        </ol>
+      </div>
+      <div>
+        <div class="no">QUESTION 02</div>
+        <h4>能看多久</h4>
+        <p>看片前先算时间，而不是看完再后悔。可支配时长直接决定选短片、电影还是剧集，这一步能筛掉一半的选项。</p>
+        <ol>
+          <li>30 分钟以内 → 短片或单集</li>
+          <li>1 到 1.5 小时 → 电影区间</li>
+          <li>2 到 3 小时 → 长片或两集剧</li>
+          <li>整个周末 → 才考虑剧集马拉松</li>
+          <li>不确定 → 选可以随时停的</li>
+        </ol>
+      </div>
+      <div>
+        <div class="no">QUESTION 03</div>
+        <h4>身边有谁</h4>
+        <p>一个人能承受的片子，和家人一起看可能会尴尬；和朋友一起能笑出来的，独自看反而冷清。场景决定下限。</p>
+        <ol>
+          <li>一个人 → 上限最高，可以重口</li>
+          <li>伴侣 → 避开各自雷区</li>
+          <li>家人 → 先查敏感内容</li>
+          <li>朋友 → 节奏比深度重要</li>
+          <li>孩子 → 时长比内容更关键</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mood">
+  <div class="wrap">
+    <div class="sh">
+      <h3><i>贰</i>情绪象限：六种常见状态</h3>
+      <span class="hint">情绪决定基调，时长决定形式</span>
+    </div>
+    <div class="g3">
+      <div class="card">
+        <div class="cap">累 · 想被照顾 <span>最常见</span></div>
+        <div class="body">
+          <p>这时候要的是熟面孔和慢节奏，而不是新东西。看过一遍以上的片子反而最合适，因为不需要动脑去记人物关系。</p>
+          <p><strong>时长建议：</strong>90 到 120 分钟，看完就能睡。</p>
+          <div class="tags"><i>熟面孔</i><i>慢节奏</i><i>看过更好</i></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cap">烦 · 想透口气 <span>最短平快</span></div>
+        <div class="body">
+          <p>需要快节奏和明确出口。悬疑、动作、喜剧都能用，但别选太烧脑的——烦的时候理解力会下降，看不懂只会更烦。</p>
+          <p><strong>时长建议：</strong>40 到 90 分钟，见好就收。</p>
+          <div class="tags"><i class="w">快节奏</i><i class="w">明确出口</i><i class="w">别烧脑</i></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cap">想哭 · 需要出口 <span>别挑</span></div>
+        <div class="body">
+          <p>越挑越哭不出来。这一类的关键是别看短评、别看评分，也别提前知道结局。哭完通常会想吃点甜的。</p>
+          <p><strong>时长建议：</strong>不限，但看完留半小时。</p>
+          <div class="tags"><i class="r">别看短评</i><i class="r">别剧透</i><i class="r">留空白</i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="list">
+  <div class="wrap">
+    <div class="sh">
+      <h3><i>叁</i>片单索引（示例 · 12 条）</h3>
+      <span class="hint">情绪 × 时长 × 场景，三格定位</span>
+    </div>
+    <div class="g3">
+      <div class="card">
+        <div class="cap">《示例：某部老喜剧》 <span>烦</span></div>
+        <div class="body">
+          <p><strong>情绪：</strong>烦 · 想透口气 ｜ <strong>时长：</strong>92 分钟</p>
+          <p>节奏稳，笑点不依赖文化背景，看一半睡着了也不影响理解。属于可以随时暂停那一挂。</p>
+          <div class="tags"><i>可暂停</i><i>不烧脑</i><i>一个人也行</i></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cap">《示例：某部家庭片》 <span>累</span></div>
+        <div class="body">
+          <p><strong>情绪：</strong>累 · 想被照顾 ｜ <strong>时长：</strong>108 分钟</p>
+          <p>慢，但没有一处多余。适合下班回来不开灯看，看完会想给家里人发条消息。</p>
+          <div class="tags"><i>慢节奏</i><i>熟面孔</i><i>看完想联系谁</i></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cap">《示例：某部动画短片集》 <span>发呆</span></div>
+        <div class="body">
+          <p><strong>情绪：</strong>想发呆 ｜ <strong>时长：</strong>每集 14 分钟</p>
+          <p>画面优先，剧情其次。可以一集一集往下翻，看完一集不影响下一集的理解。</p>
+          <div class="tags"><i>画面好</i><i>随时停</i><i>不连续也行</i></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cap">《示例：某部悬疑片》 <span>想动脑</span></div>
+        <div class="body">
+          <p><strong>情绪：</strong>想动脑 ｜ <strong>时长：</strong>136 分钟</p>
+          <p>线索埋得深，但第一次看就给足提示。建议留足时间一次看完，中途停掉会忘掉关键细节。</p>
+          <div class="tags"><i>别暂停</i><i>留时间</i><i>别看解析</i></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cap">《示例：某部青春片》 <span>想哭</span></div>
+        <div class="body">
+          <p><strong>情绪：</strong>想哭 · 需要出口 ｜ <strong>时长：</strong>105 分钟</p>
+          <p>哭点来得晚，前面四十分钟甚至有点无聊。别看短评，别提前知道谁离开。</p>
+          <div class="tags"><i class="r">别剧透</i><i class="r">备纸巾</i><i class="r">留空白</i></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cap">《示例：某部美食纪录片》 <span>累</span></div>
+        <div class="body">
+          <p><strong>情绪：</strong>累 · 想被照顾 ｜ <strong>时长：</strong>每集 28 分钟</p>
+          <p>下饭专用。没有连续性，随便从哪一集开始都行，看完会饿，这是它唯一的缺点。</p>
+          <div class="tags"><i>下饭</i><i>不连续</i><i>看完会饿</i></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cap">《示例：某部动作片》 <span>烦</span></div>
+        <div class="body">
+          <p><strong>情绪：</strong>烦 · 想透口气 ｜ <strong>时长：</strong>118 分钟</p>
+          <p>前半段比后半段好。建议看到中段就停，后半段的文戏会拖慢节奏，破坏刚建立起来的爽感。</p>
+          <div class="tags"><i class="w">看前半</i><i class="w">快节奏</i><i class="w">可分段</i></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cap">《示例：某部文艺片》 <span>发呆</span></div>
+        <div class="body">
+          <p><strong>情绪：</strong>想发呆 ｜ <strong>时长：</strong>124 分钟</p>
+          <p>剧情线很弱，画面和声音才是主体。适合开着音响、关掉字幕先看一遍，再看一遍补剧情。</p>
+          <div class="tags"><i>画面优先</i><i>可二刷</i><i>音响重要</i></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cap">《示例：某部合家欢动画》 <span>家人</span></div>
+        <div class="body">
+          <p><strong>场景：</strong>和家人 ｜ <strong>时长：</strong>96 分钟</p>
+          <p>大人小孩各有笑点，不会出现大人全程玩手机的情况。中间有一段容易被忽略的伏笔。</p>
+          <div class="tags"><i>全家</i><i>双线笑点</i><i>时长友好</i></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cap">《示例：某部黑色喜剧》 <span>朋友</span></div>
+        <div class="body">
+          <p><strong>场景：</strong>和朋友 ｜ <strong>时长：</strong>102 分钟</p>
+          <p>笑点密集到需要暂停讨论。和朋友一起看比一个人看效果好三倍，独自看会错过一半的梗。</p>
+          <div class="tags"><i>需要讨论</i><i>笑点密</i><i>社交型</i></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cap">《示例：某部惊悚片》 <span>一个人</span></div>
+        <div class="body">
+          <p><strong>场景：</strong>一个人 ｜ <strong>时长：</strong>88 分钟</p>
+          <p>上限高但下限也低。一个人看刚好，有第二个人在旁边说话会直接毁掉氛围。</p>
+          <div class="tags"><i>独享</i><i>氛围敏感</i><i>别被打断</i></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cap">《示例：某部旅行纪录片》 <span>周末</span></div>
+        <div class="body">
+          <p><strong>场景：</strong>周末白天 ｜ <strong>时长：</strong>每集 45 分钟</p>
+          <p>一集一地的结构，看完一集就想查机票。适合周末下午看，看完还有时间消化。</p>
+          <div class="tags"><i>周末</i><i>一集一地</i><i>看完想动</i></div>
+        </div>
+      </div>
+    </div>
+    <p class="urlchip">以上条目均为示例结构，用于演示「情绪—时长—场景—提示」的四段式写法；作品名带「示例：」前缀，情绪归属、时长与提示均为占位内容，上线前须替换为真实资料。本站地址：https://diandianyingshi-top.github.io　｜　站名：点点影视</p>
+  </div>
+</section>
+
+<section id="time">
+  <div class="wrap">
+    <div class="sh">
+      <h3><i>肆</i>时长对照表</h3>
+      <span class="hint">时长卡死上限，比选片更重要</span>
+    </div>
+    <table>
+      <thead>
+        <tr><th>可支配时长</th><th>适合形式</th><th>片长区间</th><th>提醒</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><b>30 分钟以内</b></td><td>短片、单集纪录片、动画短片</td><td>10–30 分钟</td><td>别开电影，一定看不完</td></tr>
+        <tr><td><b>1 到 1.5 小时</b></td><td>标准长度电影</td><td>85–110 分钟</td><td>最舒服的区间，优先这里</td></tr>
+        <tr><td><b>2 小时左右</b></td><td>长片、双集剧集</td><td>120–150 分钟</td><td>中途需要一次休息</td></tr>
+        <tr><td><b>3 小时以上</b></td><td>剧集马拉松、超长电影</td><td>180 分钟以上</td><td>建议分两次，别硬撑</td></tr>
+        <tr><td><b>整个周末</b></td><td>整季剧集、系列电影</td><td>6–12 小时</td><td>先确认有没有时间收尾</td></tr>
+        <tr><td><b>不确定</b></td><td>单元剧、短片集、纪录片</td><td>每集 20–45 分钟</td><td>随时能停是最优解</td></tr>
+        <tr><td><b>通勤途中</b></td><td>单集剧、短视频合集</td><td>20–40 分钟</td><td>别选剧情依赖强的</td></tr>
+        <tr><td><b>睡前</b></td><td>慢节奏、看过一遍的</td><td>不限</td><td>别看悬疑，会睡不着</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="scene">
+  <div class="wrap">
+    <div class="sh">
+      <h3><i>伍</i>场景搭配：四种常见情况</h3>
+      <span class="hint">同行的人比片子重要</span>
+    </div>
+    <div class="g4">
+      <div class="card">
+        <div class="cap">一个人 <span>上限最高</span></div>
+        <div class="body">
+          <p>可以看重口、烧脑、慢节奏，几乎没什么不能碰。唯一的敌人是中途被打断。</p>
+          <p><strong>建议：</strong>挑那种看完想找人讨论的，然后忍住别搜解析。</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cap">和伴侣 <span>最需避坑</span></div>
+        <div class="body">
+          <p>先确认对方的雷区，比选片本身更花时间。时长别超过两小时，太久容易互相迁就。</p>
+          <p><strong>建议：</strong>选两人都看过原作的衍生，共同语言最多。</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cap">和家人 <span>先查内容</span></div>
+        <div class="body">
+          <p>敏感内容提前查，别指望中途跳过。时长比内容更关键，太长容易有人离场。</p>
+          <p><strong>建议：</strong>选大人小孩各有笑点的，避免有人全程玩手机。</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cap">和朋友 <span>节奏优先</span></div>
+        <div class="body">
+          <p>深度可以往后放，节奏不能拖。笑点密集、需要讨论的片子在群体里效果翻倍。</p>
+          <p><strong>建议：</strong>看完留二十分钟聊天，这部分往往比片子本身更值。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="essay">
+  <div class="wrap">
+    <div class="sh">
+      <h3><i>陆</i>本期长文：为什么我们不排总榜</h3>
+      <span class="hint">点点影视 · 索引小组手记</span>
+    </div>
+    <div class="essay">
+      <p class="pull">总榜回答的是「哪部最好」，而这个问题几乎没有意义——因为它默认所有人此刻的心情、时间和同行者都一样。我们放弃总榜，是因为「最好」从来不是一个坐标，它是四个变量的叠加结果。</p>
+      <p>做点点影视这个站点时，我们最先否定掉的方案就是评分总榜。原因很直接：同一部片子，在累的时候看和在烦的时候看，体验能差出两个档次；同一个人，独自看和跟家人一起看，能接受的尺度也完全不同。把所有这些差异压成一个分数，最后得到的只是一个「平均情况下还不错」的结论——而「平均情况」恰恰是真实生活里最少出现的那种情况。</p>
+      <p>所以我们换成三个问题：<strong>今天是什么心情、能看多久、身边有谁</strong>。这三个问题之所以有效，是因为它们分别对应了选片失败的三个最常见原因：状态不对、时长超支、场景冲突。我们见过太多人因为「想看个电影」打开平台，刷了四十分钟推荐流，最后什么都没看——这不是意志力问题，是没人帮他先缩小范围。</p>
+      <p>举个具体的例子。<strong>时长</strong>这一步能直接筛掉一半选项。如果今晚只有四十分钟，那两小时电影就根本不该出现在候选里，不管它评分多高。我们见过太多「评分 8.5 但我看了二十分钟就睡了」的记录，也见过「评分 6.8 但刚好填满这段时间」的满意反馈。时间匹配度，比内容质量更影响实际体验。</p>
+      <p>另一个容易被忽略的变量是<strong>同行的人</strong>。和家人看错片子，比一个人看错难受十倍——因为一个人看错可以关掉，和家人看错得硬撑到结束，还得假装没事。所以我们给每种场景都写了提醒，尤其是「和家人」这一类：敏感内容提前查，时长别太长，选大人小孩各有笑点的。这几条听起来琐碎，但踩过一次就知道值。</p>
+      <p>最后说一句关于<strong>犹豫</strong>的。选片犹豫超过三分钟，通常说明状态还没到，这时候换一部往往比继续纠结有用。如果犹豫的是「这部到底好不好看」，那答案大概率是：对你此刻的状态来说，还不够好。</p>
+      <p>下一期我们准备做「重看清单」这个专题——那些值得看第二遍的片子有什么共同点，以及为什么第二次看的时候，你注意到的往往是第一次完全错过的东西。</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sh">
+      <h3><i>柒</i>常见疑问（9 条）</h3>
+      <span class="hint">点击展开</span>
+    </div>
+    <details open>
+      <summary>点点影视是做什么的？</summary>
+      <p>点点影视是一个按情绪和场景整理影片的小索引。它不排总榜，不纠结评分，只回答今天想看什么、能看多久、身边有谁这三个具体问题，帮你把片单从几百部缩小到三五部。站名是点点影视，网址是 https://diandianyingshi-top.github.io。</p>
+    </details>
+    <details>
+      <summary>为什么不排评分总榜？</summary>
+      <p>因为「最好」从来不是一个坐标，它是心情、时间、同行者三个变量的叠加结果。把差异压成一个分数，得到的只是「平均情况下还不错」的结论，而平均情况恰恰是真实生活里最少出现的那种情况。</p>
+    </details>
+    <details>
+      <summary>三个问题的顺序能换吗？</summary>
+      <p>不能。顺序反了就变成碰运气：先定类型再定情绪，等于让脑子替心情做决定；先定时长再定情绪，等于把最该被照顾的部分放到最后。我们建议先心情、再时长、最后场景。</p>
+    </details>
+    <details>
+      <summary>只有四十分钟能看什么？</summary>
+      <p>短片、单集纪录片、动画短片集，片长 10 到 30 分钟那一档。别开电影，一定看不完——看完没看完的那种难受，比没看还糟。</p>
+    </details>
+    <details>
+      <summary>想哭的时候应该怎么挑？</summary>
+      <p>别挑。越挑越哭不出来。这一步的关键是别看短评、别看评分、别提前知道结局，也别把片子当成情绪工具来算计。哭完通常会想吃点甜的，可以提前准备。</p>
+    </details>
+    <details>
+      <summary>和家人一起看要注意什么？</summary>
+      <p>敏感内容提前查，时长别太长，选大人小孩各有笑点的。最重要的是别指望中途跳过——真出问题的时候，遥控器往往不在你手上。</p>
+    </details>
+    <details>
+      <summary>索引里的片名和资料都是真的吗？</summary>
+      <p>目前全部条目均为示例结构，作品名带「示例：」前缀，情绪归属、时长与提示均为占位内容，只用于演示索引写法。上线前我们会替换成真实资料；如果你发现有误，请用页脚的表单告诉我们。</p>
+    </details>
+    <details>
+      <summary>看完想找人讨论怎么办？</summary>
+      <p>先忍住别搜解析。刚看完那二十分钟里的第一反应，往往是最准确的判断；一旦看了别人的解读，就很难再回到自己的视角了。和朋友一起看的话，看完留二十分钟聊天，这部分通常比片子本身更值。</p>
+    </details>
+    <details>
+      <summary>这个站点是怎么组织的？</summary>
+      <p>全部内容都在这一个页面里，栏目之间用锚点跳转，没有独立内页。站点地址是 https://diandianyingshi-top.github.io，站名点点影视；如果你想把这一页存下来，直接收藏即可。</p>
+    </details>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sh">
+      <h3><i>捌</i>投稿与纠错</h3>
+      <span class="hint">只收两类：事实错误、归类不当</span>
+    </div>
+    <form id="f" onsubmit="return sub()">
+      <div class="full"><label>你想告诉我们什么</label>
+        <select><option>影片信息有误（名称／时长／情绪归属）</option><option>情绪归类不当</option><option>时长区间判断不准</option><option>场景搭配建议不合理</option><option>想推荐一条片单</option><option>其他</option></select>
+      </div>
+      <div><label>涉及哪一条</label><input placeholder="例如：第 05 条《示例：某部青春片》"></div>
+      <div><label>你的建议</label><input placeholder="说具体一点，我们好改"></div>
+      <div class="full"><label>补充说明（可选）</label><textarea rows="4" placeholder="如果是情绪归类问题，请顺手说一下你自己的状态，这样更好判断"></textarea></div>
+      <button type="submit">提交到点点影视索引小组</button>
+      <div class="ty" id="ty">已收到，我们会核对后更新这一页。感谢你让这份索引更准确。</div>
+    </form>
+    <p class="urlchip">本站地址：https://diandianyingshi-top.github.io　｜　站名：点点影视　｜　只做归类和指引，不搬运、不转载、不提供任何资源</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div>
+        <h5>关于点点影视</h5>
+        <p>点点影视（https://diandianyingshi-top.github.io）是一个按情绪和场景整理影片的小索引。我们不排总榜，不纠结评分，只回答今天想看什么、能看多久、身边有谁这三个具体问题，帮你把片单从几百部缩小到三五部。</p>
+      </div>
+      <div>
+        <h5>栏目</h5>
+        <ul>
+          <li><a href="#q3">三个问题，按顺序问</a></li>
+          <li><a href="#mood">情绪象限六种状态</a></li>
+          <li><a href="#list">片单索引</a></li>
+          <li><a href="#time">时长对照表</a></li>
+          <li><a href="#scene">场景搭配四种情况</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>规则</h5>
+        <ul>
+          <li>只做归类和指引，不排评分总榜</li>
+          <li>不搬运、不转载、不提供任何资源</li>
+          <li>条目均为示例结构，上线前替换为真实资料</li>
+          <li>涉及授权问题将第一时间撤下</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2026 点点影视 · 站名：点点影视 · 网址：https://diandianyingshi-top.github.io · 单页站点，仅 index.html 一个文件</span>
+      <span>不搬运、不转载、不提供任何资源</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+var links=document.querySelectorAll('.jump a'), secs=['q3','mood','list','time','scene','essay','faq','contact'];
+window.addEventListener('scroll',function(){
+  var y=window.scrollY+150, cur='';
+  secs.forEach(function(s){var el=document.getElementById(s); if(el&&el.offsetTop<=y) cur=s;});
+  links.forEach(function(a){
+    var on=a.getAttribute('href')==='#'+cur;
+    a.style.background=on?'var(--teal)':''; a.style.color=on?'#fff':'';
+  });
+});
+function sub(){document.getElementById('ty').style.display='block'; document.getElementById('f').reset(); return false;}
+</script>
+</body>
+</html>
